@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            h2 {
+                font-family: Arial, sans-serif;
+                color: #333;
+                text-align: center;
+            }
+
+            tr {
+                border: 1px solid #ccc;
+            }
+
+            table {
+                width: 100%;
+                border: 1px solid #444;
+            }
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                max-width: 300px;
+                margin: 0 auto;
+            } 
+
+            .submitbtn {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Employee Details</h2>
+
+        <table>
+            <form>
+            <tr>
+                <td><b>01. Personal Information</b></td>
+            </tr>
+            <tr>
+                <td><label for="first_name">Employee Name</label><br>
+                <input type="text" id="first_name" name="first_name"></td>
+
+                <td><label for="last_name">Last Name</label><br>
+                <input type="text" id="last_name" name="last_name"></td>
+            </tr>
+            <tr>
+                <td><label for="start_date">Starting Date<br>
+                <input type="date" id="start_date" name="start_date"></td>
+                
+                <td><label for="birth_date">Birth Date</label><br>
+                <input type="date" id="birth_date" name="birth_date"></td>
+            </tr>
+            <tr>
+                <td><label for="emp_type">Employee Type</label><br>
+                <select id="emp_type" name="emp_type">
+                    <option value="full_time">Full Time</option>
+                    <option value="part_time">Part Time</option>
+                    <option value="contractor">Intern</option>
+                </select></td>
+
+                <td><label for="gender">Gender</label><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value ="female">
+                <label for="female">Female</label></td>
+            </tr>
+            <tr>
+                <td><label for="position">Position</label><br>
+                <input type="text" id="position" name="position"></td>
+            </tr>
+
+            <tr>
+                <td><b>02. Location</b></td>
+            </tr>
+            <tr>
+                <td><label for="city">City</label><br>
+                <input type="text" id="city" name="city">
+
+                <td><label for="state">State</label><br>
+                <input type="text" id="state" name ="state"></td>
+            </tr>
+            <tr>
+                <td><label for="zip">ZIP</label><br>
+                <input type="number" id="zip" name="zip"></td>
+                
+                <td><label for="Address">Address</label><br>
+                <input type="text" id="Address" name="Address" maxlength="50"></td>
+            </tr>
+
+            <tr>
+                <td><b>03. Contact Information</b></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Phone</label><br>
+                <input type="tel" id="phone" name="phone"></td>
+
+                <td><label for="email">Email</label><br>
+                <input type="email" id="email" name="email"></td>
+            </tr>
+
+            <tr class="submitbtn">
+                <td colspan="2"><label for="register"></label><br>
+                <input type="submit" id="register" name="register" value="Register"></td>
+            </tr>
+            </form>
+        </table>
+    </body>
+</html>
